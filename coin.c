@@ -72,7 +72,7 @@ int main() {
     insert(&root, 50);
     insert(&root, 80);
     insert(&root, 70);
-    insert(&root, 80);
+    insert(&root, 90);
 
     inorderTraversal(root);
 
