@@ -57,7 +57,7 @@ word s1(word X){RotR(X, 17) ^ RotR(X, 19) ^ ShR(X, 10);}
 
 
 //returns multiple of 64 bytes
-void pad(char** text, uint64_t* text_length){
+uint8_t pad(char** text, uint64_t* text_length){
     //(pads with a 1 then 0s)56 then length(8)
     uint64_t length = ((*text_length/8 + 63) / 64) * 64;
     char *message = (char *)malloc(length * sizeof(char));
