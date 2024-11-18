@@ -64,15 +64,13 @@ void inorderTraversal(Node* root)
 
 };
 
-
-
 int main() {
     Node* root = NULL;
     insert(&root, 20);
     insert(&root, 30);
     insert(&root, 40);
     insert(&root, 50);
-    insert(&root, 60);
+    insert(&root, 80);
     insert(&root, 70);
     insert(&root, 80);
 
